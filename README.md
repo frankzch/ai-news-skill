@@ -1,7 +1,7 @@
 # AI News Skill
 
 <p align="center">
-  <img src="./assets/logo.jpg" alt="AI Intelligence Skill" width="600">
+  <img src="./assets/logo.png" alt="AI Intelligence Skill" width="600">
 </p>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/frankzch/ai-news-skill/blob/main/LICENSE)
@@ -13,10 +13,10 @@
 
 This is an agent skill that fetches real-time, comprehensive, and deeply filtered first-hand AI intelligence. **Completely free, works out of the box — no API keys needed, no self-scraping required.**
 
-📊 Currently aggregating **75 AI sources** (and growing — contributions of new sources are welcome!), including:
-- **15 News Sources** — covering mainstream AI/ML industry media like TechReview, TheVerge AI, Venturebeat, artificialintelligence-news, TechCrunch, Machine Learning Mastery, MarkTechPost, plus official blogs from Nvidia Blog, Apple AI, Microsoft Blog, Google Deepmind Blog, OpenAI, Google Research Blog, etc.
-- **46 Social Media Hotspots** — including Reddit, X, HackerNews and other major social platforms, trending topics, hot keywords, and top KOL accounts. X KOLs include: Andrej Karpathy, Sam Altman, Peter Steinberger, Aditya Agarwal, Dan Shipper, Nikunj Kothari, Ryo Lu, Matt Turck, Aaron Levie, Alex Albert, Guillermo Rauch, Amjad Masad, Amanda Askell, Madhu Guru, Kevin Weil, etc.
-- **13 Top Video Creators** — leading YouTube AI content creators, including: Matt Wolfe, Dwarkesh Patel, DataDrivenNYC, Latent Space, Sequoia Capital, Yannic Kilcher, NoPriorsPodcast, RedpointAI, EveryInc, Fireship, Lex Fridman, Wes Roth, etc.
+📊 Currently aggregating **100 AI sources** (and growing — contributions of new sources are welcome!), including:
+- **20 News Sources** — covering mainstream AI/ML industry media like TechReview, TheVerge AI, Venturebeat, artificialintelligence-news, TechCrunch, Machine Learning Mastery, MarkTechPost, plus official blogs from Nvidia Blog, Apple AI, Microsoft Blog, Google Deepmind Blog, OpenAI, Google Research Blog, etc. — and **HuggingFace weekly trending papers** for the latest research highlights
+- **60 Social Media Hotspots** — including Reddit, X, HackerNews and other major social platforms, trending topics, hot keywords, and top KOL accounts. X KOLs include: Andrej Karpathy, Sam Altman, Peter Steinberger, Aditya Agarwal, Dan Shipper, Nikunj Kothari, Ryo Lu, Matt Turck, Aaron Levie, Alex Albert, Guillermo Rauch, Amjad Masad, Amanda Askell, Madhu Guru, Kevin Weil, etc.
+- **18 Top Video Creators** — leading YouTube AI content creators, including: Matt Wolfe, Dwarkesh Patel, DataDrivenNYC, Latent Space, Sequoia Capital, Yannic Kilcher, NoPriorsPodcast, RedpointAI, EveryInc, Fireship, Lex Fridman, Wes Roth, etc.
 - **GitHub Trending** — weekly hot AI repositories
 
 > 🔄 All sources are automatically refreshed every **3 hours**

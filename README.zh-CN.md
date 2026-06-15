@@ -9,10 +9,10 @@
 
 这是一个可以获取实时、全面、深度过滤的一手AI信息的Agent skill。**完全免费，开箱即用，不需要任何 API Key，也不需要自己抓取数据**。
 
-📊 目前已聚合 **75 个 AI 信息源**（持续增加中，欢迎提供更多信息源地址），涵盖：
-- **15 个新闻资讯源** — 覆盖 TechReview、TheVerge AI、Venturebeat、artificialintelligence-news、TechCrunch、Machine Learning Mastery、MarkTechPost 等主流 AI/ML 行业媒体，以及 Nvidia Blog、Apple AI、Microsoft Blog、Google Deepmind Blog、OpenAI、Google Research Blog 等 AI 大厂官方博客
-- **46 个社交媒体** — 包含 Reddit、X、HackerNews 等主流社交媒体，热点板块、热点关键字、大 V 社媒账号。X 上的 KOL 包括：Andrej Karpathy、Sam Altman、Peter Steinberger、Aditya Agarwal、Dan Shipper、Nikunj Kothari、Ryo Lu、Matt Turck、Aaron Levie、Alex Albert、Guillermo Rauch、Amjad Masad、Amanda Askell、Madhu Guru、Kevin Weil 等
-- **13 个大 V 视频博主** — YouTube 顶尖 AI 创作者，包括：Matt Wolfe、Dwarkesh Patel、DataDrivenNYC、Latent Space、Sequoia Capital、Yannic Kilcher、NoPriorsPodcast、RedpointAI、EveryInc、Fireship、Lex Fridman、Wes Roth 等
+📊 目前已聚合 **100 个 AI 信息源**（持续增加中，欢迎提供更多信息源地址），涵盖：
+- **20 个新闻资讯源** — 覆盖 TechReview、TheVerge AI、Venturebeat、artificialintelligence-news、TechCrunch、Machine Learning Mastery、MarkTechPost 等主流 AI/ML 行业媒体，以及 Nvidia Blog、Apple AI、Microsoft Blog、Google Deepmind Blog、OpenAI、Google Research Blog 等 AI 大厂官方博客，并新增 **HuggingFace 每周趋势论文**，第一时间追踪前沿研究
+- **60 个社交媒体** — 包含 Reddit、X、HackerNews 等主流社交媒体，热点板块、热点关键字、大 V 社媒账号。X 上的 KOL 包括：Andrej Karpathy、Sam Altman、Peter Steinberger、Aditya Agarwal、Dan Shipper、Nikunj Kothari、Ryo Lu、Matt Turck、Aaron Levie、Alex Albert、Guillermo Rauch、Amjad Masad、Amanda Askell、Madhu Guru、Kevin Weil 等
+- **18 个大 V 视频博主** — YouTube 顶尖 AI 创作者，包括：Matt Wolfe、Dwarkesh Patel、DataDrivenNYC、Latent Space、Sequoia Capital、Yannic Kilcher、NoPriorsPodcast、RedpointAI、EveryInc、Fireship、Lex Fridman、Wes Roth 等
 - **GitHub 开源趋势榜** — 每周热门 AI 仓库
 
 > 🔄 所有信息源每 **3 小时** 自动更新一次

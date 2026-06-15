@@ -2,7 +2,7 @@
 name: ai-news-skill
 description: >
   Fetch the latest AI/ML news, trending open-source projects, social media discussions,
-  and KOL (Key Opinion Leader) perspectives from 75+ curated sources. Use when the user
+  and KOL (Key Opinion Leader) perspectives from 100+ curated sources. Use when the user
   asks about recent AI news, AI trends, what's happening in machine learning, open-source
   AI projects, AI Twitter/Reddit discussions, or wants a daily AI briefing.
 license: MIT
