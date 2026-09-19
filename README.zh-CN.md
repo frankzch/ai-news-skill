@@ -1,4 +1,4 @@
-# AI News Skill
+# AI News Skill：在 Claude Code / Codex / OpenClaw 里每天看 AI 资讯摘要
 
 <p align="center">
   <img src="./assets/logo.png" alt="AI Intelligence Skill" width="600">
@@ -11,15 +11,21 @@
 
 ---
 
-这是一个可以获取实时、全面、深度过滤的一手AI信息的Agent skill。**完全免费，开箱即用，不需要任何 API Key，也不需要自己抓取数据**。
+每天把国外 AI 一手信息整理成中文摘要：在编程 Agent 里问一句“今天 AI 圈有什么新闻？”，就能拿到来自 **94 个精选信息源**、去重后的中英双语摘要——AI 大厂官方博客、X 上 35 位顶尖 AI 从业者（Karpathy、Sam Altman、Simon Willison 等）、Reddit 与 Hacker News 讨论、13 个 AI YouTube 频道、Hugging Face 论文和 GitHub Trending。**完全免费，不需要 API Key，一条 `git clone` 即可安装。**
 
-📊 目前已聚合 **100 个 AI 信息源**（持续增加中，欢迎提供更多信息源地址），涵盖：
-- **20 个新闻资讯源** — 覆盖 TechReview、TheVerge AI、Venturebeat、artificialintelligence-news、TechCrunch、Machine Learning Mastery、MarkTechPost 等主流 AI/ML 行业媒体，以及 Nvidia Blog、Apple AI、Microsoft Blog、Google Deepmind Blog、OpenAI、Google Research Blog 等 AI 大厂官方博客，并新增 **HuggingFace 每周趋势论文**，第一时间追踪前沿研究
-- **60 个社交媒体** — 包含 Reddit、X、HackerNews 等主流社交媒体，热点板块、热点关键字、大 V 社媒账号。X 上的 KOL 包括：Andrej Karpathy、Sam Altman、Peter Steinberger、Aditya Agarwal、Dan Shipper、Nikunj Kothari、Ryo Lu、Matt Turck、Aaron Levie、Alex Albert、Guillermo Rauch、Amjad Masad、Amanda Askell、Madhu Guru、Kevin Weil 等
-- **18 个大 V 视频博主** — YouTube 顶尖 AI 创作者，包括：Matt Wolfe、Dwarkesh Patel、DataDrivenNYC、Latent Space、Sequoia Capital、Yannic Kilcher、NoPriorsPodcast、RedpointAI、EveryInc、Fireship、Lex Fridman、Wes Roth 等
+```bash
+git clone https://github.com/frankzch/ai-news-skill.git ~/.claude/skills/ai-news-skill
+```
+
+支持 Claude Code、Codex、OpenClaw 和 Antigravity（各平台安装路径见[快速开始](#-快速开始)）。
+
+📊 **94 个信息源**（持续增加中，欢迎提供更多信息源地址）：
+- **16 个新闻资讯源** — TechReview、TheVerge、Venturebeat、artificialintelligence-news、TechCrunch、Machine Learning Mastery、MarkTechPost 等主流 AI/ML 媒体，以及 Nvidia、Apple ML、Microsoft AI、Google DeepMind、OpenAI、Google Research、Hugging Face 等官方博客，并包含 **Hugging Face 每日论文榜**，第一时间追踪前沿研究
+- **64 个社区讨论源** — Hacker News、16 个 Reddit 源（板块热帖 + 关键词搜索）和 47 个 X 源：35 位顶尖 AI 从业者账号 + 12 个关键词搜索。X 账号包括：Andrej Karpathy、Sam Altman、Simon Willison、Peter Steinberger、Aditya Agarwal、Dan Shipper、Nikunj Kothari、Ryo Lu、Matt Turck、Aaron Levie、Alex Albert、Guillermo Rauch、Amjad Masad、Amanda Askell、Kevin Weil 等
+- **13 个 YouTube 频道** — 基于字幕生成摘要：Matt Wolfe、Dwarkesh Patel、DataDrivenNYC、Latent Space、Sequoia Capital、Yannic Kilcher、NoPriorsPodcast、RedpointAI、EveryInc、Fireship、Lex Fridman、Wes Roth、Two Minute Papers
 - **GitHub 开源趋势榜** — 每周热门 AI 仓库
 
-> 🔄 所有信息源每 **3 小时** 自动更新一次
+> 🔄 所有信息源每 **2 小时** 自动更新一次
 
 ### 🌟 数据抓取由 InBrief.info 驱动
 此 Agent Skill背后的全网AI信息数据处理由 **[InBrief.info](https://inbrief.info)** 免费驱动。如果你只想直接通过网页查阅最新、最优质的 AI 资讯，强烈推荐直接访问 **[InBrief.info](https://inbrief.info)** 获取个性化的专属简报，无需折腾任何 Agent！
@@ -87,6 +93,23 @@ Agent 会自动理解你的需求并转化为精确的过滤条件。你可以�
 
 ### 🔧 AgentSkills 标准兼容
 本 Skill 遵循 [AgentSkills](https://agentskills.io/) 开放标准。`SKILL.md` 文件包含所有元数据和指令，任何兼容的 Agent 都可以自动发现、激活和执行此 Skill。
+
+### ❓ 常见问题
+
+**怎么在 Claude Code 或 Codex 里直接查最新 AI 资讯？**
+安装本 skill（一条 `git clone`），然后直接用中文问，例如“过去 24 小时的 AI 新闻，只看新闻类，用长摘要”。Agent 会自动转成分类、来源、时间范围等过滤条件。
+
+**不刷 X，也能跟踪 AI 大 V 的观点吗？**
+可以。35 位 AI 从业者的高互动推文会被采集并总结，直接问“过去 3 天 KOL 的观点”即可。
+
+**收费吗？**
+免费。不注册每次最多返回 3 条；免费注册 InBrief.info 后每次 6 条；会员每次最多 100 条。
+
+**能看中文摘要吗？**
+能。每条内容都有中英双语摘要，要求用中文输出即可，默认跟随系统语言。
+
+**想自己部署采集流水线怎么办？**
+采集与精选引擎已开源：[ai-news-brief](https://github.com/frankzch/ai-news-brief)（MIT）。
 
 ### 🤝 参与贡献
 欢迎贡献代码！请查看 [CONTRIBUTING.md](./CONTRIBUTING.md) 了解贡献指南。
