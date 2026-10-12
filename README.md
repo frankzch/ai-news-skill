@@ -11,7 +11,7 @@
 
 ---
 
-Ask your coding agent *"what happened in AI today?"* and get a deduplicated, summarized digest from **94 curated sources**: official AI lab blogs, 35 top AI builders on X (Karpathy, Sam Altman, Simon Willison…), Reddit and Hacker News discussions, 13 AI YouTube channels, Hugging Face papers and GitHub Trending. Summaries in English or Chinese. **Free, no API key, one `git clone` to install.**
+Ask your coding agent *"what happened in AI today?"* and get a deduplicated, summarized digest from **370+ curated sources**: official AI lab blogs, ~310 top AI builders on X (Karpathy, Sam Altman, Simon Willison…), Reddit and Hacker News discussions, 13 AI YouTube channels, Hugging Face papers and GitHub Trending. Summaries in English or Chinese. **Free, no API key, one `git clone` to install.**
 
 ```bash
 git clone https://github.com/frankzch/ai-news-skill.git ~/.claude/skills/ai-news-skill
@@ -19,9 +19,9 @@ git clone https://github.com/frankzch/ai-news-skill.git ~/.claude/skills/ai-news
 
 Works with Claude Code, Codex, OpenClaw and Antigravity (see [Quick Start](#-quick-start) for paths).
 
-📊 The **94 sources** (and growing — contributions of new sources are welcome!):
+📊 The **370+ sources** (and growing — contributions of new sources are welcome!):
 - **16 News Sources** — mainstream AI/ML media like TechReview, TheVerge, Venturebeat, artificialintelligence-news, TechCrunch, Machine Learning Mastery, MarkTechPost, plus official blogs from Nvidia, Apple ML, Microsoft AI, Google DeepMind, OpenAI, Google Research, Hugging Face — and **Hugging Face daily papers** for the latest research highlights
-- **64 Discussion Sources** — Hacker News, 16 Reddit sources (subreddits + keyword searches) and 47 X sources: 35 top AI builders plus 12 keyword searches. X builders include: Andrej Karpathy, Sam Altman, Simon Willison, Peter Steinberger, Aditya Agarwal, Dan Shipper, Nikunj Kothari, Ryo Lu, Matt Turck, Aaron Levie, Alex Albert, Guillermo Rauch, Amjad Masad, Amanda Askell, Kevin Weil, etc.
+- **340+ Discussion Sources** — Hacker News, 16 Reddit sources (subreddits + keyword searches) and 320+ X sources: ~310 top AI builders (an auto-expanding list), 12 keyword searches and 2 site-wide high-engagement searches that catch viral AI posts from any account. X builders include: Andrej Karpathy, Sam Altman, Simon Willison, Peter Steinberger, Aditya Agarwal, Dan Shipper, Nikunj Kothari, Ryo Lu, Matt Turck, Aaron Levie, Alex Albert, Guillermo Rauch, Amjad Masad, Amanda Askell, Kevin Weil, etc.
 - **13 YouTube Channels** — leading AI creators, summarized from transcripts: Matt Wolfe, Dwarkesh Patel, DataDrivenNYC, Latent Space, Sequoia Capital, Yannic Kilcher, NoPriorsPodcast, RedpointAI, EveryInc, Fireship, Lex Fridman, Wes Roth, Two Minute Papers
 - **GitHub Trending** — weekly hot AI repositories
 
@@ -100,7 +100,7 @@ This skill follows the [AgentSkills](https://agentskills.io/) open standard. The
 Install this skill (one `git clone`), then ask in plain language, e.g. "AI news from the past 24 hours, news only, long summaries". The agent turns it into category / source / time-range filters.
 
 **Can I follow AI builders and KOLs on X without scrolling X?**
-Yes. High-engagement posts from 35 AI builders are collected and summarized; ask for "KOL insights from the past 3 days".
+Yes. High-engagement posts from ~310 AI builders are collected and summarized; ask for "KOL insights from the past 3 days".
 
 **Is it free?**
 Yes. Without an account each request returns up to 3 items; a free InBrief.info account raises it to 6; members get up to 100.

@@ -11,7 +11,7 @@
 
 ---
 
-每天把国外 AI 一手信息整理成中文摘要：在编程 Agent 里问一句“今天 AI 圈有什么新闻？”，就能拿到来自 **94 个精选信息源**、去重后的中英双语摘要——AI 大厂官方博客、X 上 35 位顶尖 AI 从业者（Karpathy、Sam Altman、Simon Willison 等）、Reddit 与 Hacker News 讨论、13 个 AI YouTube 频道、Hugging Face 论文和 GitHub Trending。**完全免费，不需要 API Key，一条 `git clone` 即可安装。**
+每天把国外 AI 一手信息整理成中文摘要：在编程 Agent 里问一句“今天 AI 圈有什么新闻？”，就能拿到来自 **370+ 个精选信息源**、去重后的中英双语摘要——AI 大厂官方博客、X 上约 310 位顶尖 AI 从业者（Karpathy、Sam Altman、Simon Willison 等）、Reddit 与 Hacker News 讨论、13 个 AI YouTube 频道、Hugging Face 论文和 GitHub Trending。**完全免费，不需要 API Key，一条 `git clone` 即可安装。**
 
 ```bash
 git clone https://github.com/frankzch/ai-news-skill.git ~/.claude/skills/ai-news-skill
@@ -19,9 +19,9 @@ git clone https://github.com/frankzch/ai-news-skill.git ~/.claude/skills/ai-news
 
 支持 Claude Code、Codex、OpenClaw 和 Antigravity（各平台安装路径见[快速开始](#-快速开始)）。
 
-📊 **94 个信息源**（持续增加中，欢迎提供更多信息源地址）：
+📊 **370+ 个信息源**（持续增加中，欢迎提供更多信息源地址）：
 - **16 个新闻资讯源** — TechReview、TheVerge、Venturebeat、artificialintelligence-news、TechCrunch、Machine Learning Mastery、MarkTechPost 等主流 AI/ML 媒体，以及 Nvidia、Apple ML、Microsoft AI、Google DeepMind、OpenAI、Google Research、Hugging Face 等官方博客，并包含 **Hugging Face 每日论文榜**，第一时间追踪前沿研究
-- **64 个社区讨论源** — Hacker News、16 个 Reddit 源（板块热帖 + 关键词搜索）和 47 个 X 源：35 位顶尖 AI 从业者账号 + 12 个关键词搜索。X 账号包括：Andrej Karpathy、Sam Altman、Simon Willison、Peter Steinberger、Aditya Agarwal、Dan Shipper、Nikunj Kothari、Ryo Lu、Matt Turck、Aaron Levie、Alex Albert、Guillermo Rauch、Amjad Masad、Amanda Askell、Kevin Weil 等
+- **340+ 个社区讨论源** — Hacker News、16 个 Reddit 源（板块热帖 + 关键词搜索）和 320+ 个 X 源：约 310 位顶尖 AI 从业者账号（名单自动扩充）+ 12 个关键词搜索 + 2 个全站高赞搜索（任何账号的爆款 AI 帖都能捕捉到）。X 账号包括：Andrej Karpathy、Sam Altman、Simon Willison、Peter Steinberger、Aditya Agarwal、Dan Shipper、Nikunj Kothari、Ryo Lu、Matt Turck、Aaron Levie、Alex Albert、Guillermo Rauch、Amjad Masad、Amanda Askell、Kevin Weil 等
 - **13 个 YouTube 频道** — 基于字幕生成摘要：Matt Wolfe、Dwarkesh Patel、DataDrivenNYC、Latent Space、Sequoia Capital、Yannic Kilcher、NoPriorsPodcast、RedpointAI、EveryInc、Fireship、Lex Fridman、Wes Roth、Two Minute Papers
 - **GitHub 开源趋势榜** — 每周热门 AI 仓库
 
@@ -100,7 +100,7 @@ Agent 会自动理解你的需求并转化为精确的过滤条件。你可以�
 安装本 skill（一条 `git clone`），然后直接用中文问，例如“过去 24 小时的 AI 新闻，只看新闻类，用长摘要”。Agent 会自动转成分类、来源、时间范围等过滤条件。
 
 **不刷 X，也能跟踪 AI 大 V 的观点吗？**
-可以。35 位 AI 从业者的高互动推文会被采集并总结，直接问“过去 3 天 KOL 的观点”即可。
+可以。约 310 位 AI 从业者的高互动推文会被采集并总结，直接问“过去 3 天 KOL 的观点”即可。
 
 **收费吗？**
 免费。不注册每次最多返回 3 条；免费注册 InBrief.info 后每次 6 条；会员每次最多 100 条。
