@@ -15,15 +15,30 @@ GET https://inbrief.info/api/feed/
 | `include_sources` | string | — | Comma-separated list of sources to include |
 | `exclude_sources` | string | — | Comma-separated list of sources to exclude |
 | `hours` | int | 24 | Time window in hours |
-| `limit` | int | 20 | Maximum number of items to return |
-| `lang` | string | `en` | Response language: `en` or `zh` |
+| `limit` | int | — | Optional cap on the total number of items (max 200) |
+| `lang` | string | `zh` | Response language: `en` or `zh` |
+| `api_key` | string | — | PulseAI API Key from InBrief.info → Settings; determines the tier |
 
 > **Note:** `include_*` takes precedence over `exclude_*` for the same dimension.
+
+### Tier caps (per category)
+
+| Tier | Who | Items per category |
+|------|-----|--------------------|
+| `guest` | no / invalid `api_key` | top 5 |
+| `free` | logged-in, non-member | top 10 |
+| `member` | active member | all |
+
+Within each category, items are ranked by importance score, then recency.
 
 ## Response Schema
 
 ```json
 {
+  "status": "success",
+  "tier": "guest | free | member",
+  "tier_limit": 5,
+  "count": 20,
   "articles": [
     {
       "title": "Article title",
@@ -55,6 +70,6 @@ GET https://inbrief.info/api/feed/
 
 ## Rate Limiting
 
-- **No API keys required.** Rate limits are applied per IP address.
+- **No API key required** (an API key only raises the per-category tier cap). Rate limits are applied per IP address.
 - Two layers: immediate anti-spam interval and daily request quota.
 - If rate-limited, the response includes a descriptive `detail` message.

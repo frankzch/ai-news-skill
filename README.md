@@ -31,10 +31,10 @@ Works with Claude Code, Codex, OpenClaw and Antigravity (see [Quick Start](#-qui
 The data processing behind this Agent Skill is powered for free by **[InBrief.info](https://inbrief.info)**. If you just want to browse the latest, highest-quality AI news directly via a web page, we highly recommend visiting **[InBrief.info](https://inbrief.info)** for your personalized daily briefing — no Agent setup needed!
 
 > 🔑 **Register to unlock more results**
-> Per-request result caps by tier:
-> - **No / invalid API Key** (guest): up to **3 items** per request
-> - **Logged-in, non-member**: up to **6 items** per request
-> - **Member**: up to **100 items** per request
+> Results are capped **per category** (News / Social / Video / Open Source), same as on the website:
+> - **No / invalid API Key** (guest): the **top 5** items in each category
+> - **Logged-in, non-member**: the **top 10** items in each category
+> - **Member**: **everything** in each category
 >
 > To unlock higher tiers:
 > 1. Sign up for free at **[InBrief.info](https://inbrief.info)**
@@ -85,7 +85,7 @@ The agent automatically understands your intent and translates it into precise f
 - 📂 **Filter by Category** — Include or exclude content types: News, Open Source, Social Discussions, KOL Insights
 - 📡 **Filter by Source** — Include or exclude specific platforms (e.g., Reddit, TechCrunch, etc.)
 - ⏰ **Time Range** — Customize how far back to fetch (default: past 24 hours)
-- 🔢 **Result Limit** — Control the number of items returned (effective cap depends on tier: guest 3 / logged-in 6 / member 100)
+- 🔢 **Result Limit** — Control the number of items returned (per-category cap depends on tier: guest top 5 / logged-in top 10 / member all)
 - 📝 **Summary Display** — Choose whether to show short summaries, long summaries
 - 🔗 **Link Display** — Choose whether to show original article links
 - 🌐 **Language** — Choose output language (English or Chinese). Defaults to your system language; falls back to English if neither
@@ -103,7 +103,7 @@ Install this skill (one `git clone`), then ask in plain language, e.g. "AI news 
 Yes. High-engagement posts from ~310 AI builders are collected and summarized; ask for "KOL insights from the past 3 days".
 
 **Is it free?**
-Yes. Without an account each request returns up to 3 items; a free InBrief.info account raises it to 6; members get up to 100.
+Yes. Without an account you get the top 5 items in each category; a free InBrief.info account raises it to the top 10; members get everything.
 
 **Can I get the digest in Chinese?**
 Yes. Every item is summarized in both English and Chinese; ask for Chinese, or it follows your system language.

@@ -62,7 +62,7 @@ def main():
     parser.add_argument("--include-sources", type=str)
     parser.add_argument("--exclude-sources", type=str)
     parser.add_argument("--hours", type=int, default=24)
-    parser.add_argument("--limit", type=int, default=20)
+    parser.add_argument("--limit", type=int, default=None, help="总条数上限（可选）；每个分类的条数由账号等级决定")
     parser.add_argument("--show-short-summary", type=lambda x: str(x).lower() in ['true', '1', 'yes'], default=None, help="是否显示短摘要 (true/false)")
     parser.add_argument("--show-long-summary", type=lambda x: str(x).lower() in ['true', '1', 'yes'], default=None, help="是否显示长摘要 (true/false)")
     parser.add_argument("--show-link", type=lambda x: str(x).lower() in ['true', '1', 'yes'], default=None, help="是否显示文章链接 (true/false，默认为 false)")
@@ -87,7 +87,7 @@ def main():
     apply_param("limit", args.limit)
 
     # Pass the PulseAI API Key so the server can identify the user and apply
-    # the appropriate tier cap (guest=3 / free=6 / member=100).
+    # the per-category tier cap (guest = top 5 / free = top 10 / member = all).
     # If absent or invalid, the caller is treated as a guest.
     api_key = config.get("api_key")
     if api_key and str(api_key).strip():

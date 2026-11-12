@@ -6,8 +6,8 @@
 api_host: "https://inbrief.info/api/feed/"
 
 # PulseAI API Key (obtain from https://inbrief.info → Settings → PulseAI Agent Skill)
-# Unsets or invalid keys are treated as guest (3 items per request).
-# Logged-in users get 6 items; paid members get up to 100 items per request.
+# Unset or invalid keys are treated as guest (top 5 items per category).
+# Logged-in users get the top 10 per category; paid members get everything.
 # Register for free at https://inbrief.info, then paste your key below.
 # api_key: "00000000-0000-0000-0000-000000000000"
 
